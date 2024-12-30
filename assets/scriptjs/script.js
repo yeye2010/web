@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             id: producto.dataset.id
         };
         insertarCarrito(infoProducto);
+        guardarCarrito();
     }
 
     function insertarCarrito(producto) {
@@ -79,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.target.classList.contains("borrar")) {
             e.target.closest('tr').remove();
             actualizarContador(-1);
+            guardarCarrito();
         }
     }
 
@@ -89,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         cartItemCount = 0;
         countDisplay.textContent = cartItemCount;
+        guardarCarrito();
     }
 
     function actualizarContador(count) {
@@ -96,8 +99,30 @@ document.addEventListener('DOMContentLoaded', function () {
         countDisplay.textContent = cartItemCount;
     }
 
+    // Guardar el carrito en localStorage
+    function guardarCarrito() {
+      const productosEnCarrito = [];
+      lista.querySelectorAll('tr').forEach(row => {
+          productosEnCarrito.push({
+              imagen: row.querySelector('img').src,
+              titulo: row.querySelector('td:nth-child(2)').textContent,
+              id: row.querySelector('a').dataset.id
+          });
+      });
+      localStorage.setItem('carrito', JSON.stringify(productosEnCarrito));
+  }
+
+  // Cargar el carrito desde localStorage
+  function cargarCarrito() {
+      const productosEnCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      productosEnCarrito.forEach(producto => insertarCarrito(producto));
+      cartItemCount = productosEnCarrito.length;
+      countDisplay.textContent = cartItemCount;
+  }
+
     // Inicia los event listeners
     cargarEventListeners();
+    cargarCarrito(); // Cargar el carrito al inicio
 });
 
 // modal variables
@@ -427,5 +452,7 @@ function updateRepliesCount(commentId) {
   showRepliesBtn.textContent = `${repliesCount} respuestas`;
   updateCommentCount();
 }
+
+
 
     
