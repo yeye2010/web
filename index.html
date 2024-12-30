@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.E - Sitio web de comercio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/logo-black-transparent.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+-->
+
+<div class="modal closed" data-modal>
+
+  <div class="modal-close-overlay" data-modal-overlay></div>
+
+  <div class="modal-content">
+
+    <button class="modal-close-btn" data-modal-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="newsletter-img">
+      <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+    </div>
+
+    <div class="newsletter">
+      <div class="newsletter-header">
+        <h3 class="newsletter-title">Bienvenido a J.E</h3>
+        <p class="newsletter-desc">
+          Ofrecemos productos de alta calidad y los mejores descuentos del mercado. 
+          ¡Nuestros clientes son nuestra prioridad!
+        </p>
+        <h4 class="newsletter-subtitle">¿Por qué elegirnos?</h4>
+        <ul class="newsletter-list">
+          <li>Productos garantizados</li>
+          <li>Precios competitivos</li>
+          <li>Atención excepcional</li>
+          <li>Envío rápido</li>
+          <li>Ofertas Exclusivas</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="toast-banner">
+      <img src="./assets/images/products/img 10.jpg" alt="HYDRA BLUE JEAN" width="80" height="70">
+    </div>
+    <div class="toast-detail">
+      <p class="toast-message">Última compra</p>
+      <p class="toast-title">CAMISETAS DAKLEY</p>
+      <p class="toast-meta">
+      </p>
+    </div>
+  </div>
+  
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://web.facebook.com/profile.php?id=61562259325789" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/Tienda_JE" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/onlinej.e/" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/je-high-resolution-logo-black-transparent-_1_.svg" alt="J.E's logo" width="120" height="36">
+        </a>
+
+        <div class="header-alert-news">
+          <p>
+            <b>ENVÍO GRATIS</b>
+          </p>
+        </div>
+
+        <div class="header-user-actions">
+
+          <!--
+          - Me gusta
+          -->
+
+          <button class="action-btn" id="heart-button">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+            <div id="carrito">
+                <table id="lista-carrito">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="">
+        <button class="action-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+      </a>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+
+     <!--
+    - Redes sociales movile
+  -->
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Redes Sociales</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://web.facebook.com/profile.php?id=61562259325789" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/Tienda_JE" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/onlinej.e/" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">¡Apóyanos en nuestras redes sociales!</a>
+          <p class="menu-description">Síguenos para estar al tanto de los lanzamientos de nuevos productos, promociones exclusivas y contenido emocionante. ¡No te lo pierdas!</p>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="header-content container">
+      <div class="header-img">
+        <img src="assets/images/right.png" alt="">
+      </div>
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">BIENVENIDOS A J.E</p>
+
+              <p>DESCUBRE TU ESTILO, IRRADIA BELLEZA, TU ESENCIA, NUESTRA PASIÓN.</p>
+              <a href="https://wa.me/573128462035" target="_blank" class="banner-btn">HAZ TU PEDDIDO AHORA</a>
+
+            </div>
+          </div>
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar"> <!-- Barra de desplazamientos -->
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/3.jpg" alt="dress & frock" width="100">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">RELOJ QUARTZ</a>
+              </div>
+
+              <div class="category-sales-info">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(20)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 7.jpg" alt="winter wear" width="130">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">JORDAN RETRO 1 PARIS AZUL BLANCO</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 8.jpg" alt="glasses & lens" width="95">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">CONJUNTO FALDA CHAQUETA RIBETES CONTRASTE TOP TIRANTES</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 9.jpg" alt="shorts & jeans" width="88">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">HYDRA BLUE JEAN</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 10.jpg" alt="t-shirts" width="88">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">CAMISETAS DAKLEY</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 11.jpg" alt="jacket" width="86">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">NIKE SPORTSWEAR CHAQUETA CON CAPUCHA</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 3.jpg" alt="watch" width="83">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">G-FORCE CHRONO</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/products/img 12.jpg" alt="hat & caps" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <a class="category-btn">PANTALÓN CARGO COLOR BEIGE</a>
+              </div>
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VENDIDOS</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="https://wa.me/573128462035" target="_blank" class="category-btn">Contactanos</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="product-showcase">
+
+            <div class="showcase-top">
+              <h3 class="showcase-heading">LOS MÁS VENDIDOS</h3>
+            <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            </div>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/H9.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Reloj de cuarzo</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Relojes</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/H11.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Air Jordan 1 Retro High Black Gym Red</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Tenis</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/H12.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Blusa de manga larga ajustada </h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Brusas</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/H13.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Guayo Nike Mercurial Vapor 14</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Deportivos</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="product-box">
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">MÁS PRODUCTOS</h2>
+
+            <div class="product-grid"> <!-- Cuadrícula de Productos -->
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/img 13.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./assets/images/products/img 16.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action agregar-carrito">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <h3 href="#" class="showcase-category">TENIS</h3>
+
+                  <h3 href="#">
+                    <h3 class="showcase-title">JORDAN RETRO 3 YEAR OF THE TIGER</h3>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Materiales premium</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">AGOTADO </p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action agregar-carrito">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <h3 href="#" class="showcase-category">CAMISA</h3>
+              
+                  <h3>
+                    <h3 href="#" class="showcase-title">Camisa De Algodón Teñido En Prenda Pura</h3>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">Edición limitada</p>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/img 17.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/img 18.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action agregar-carrito">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <h3 href="#" class="showcase-category">PERFUME</h3>
+              
+                  <h3>
+                    <h3 href="#" class="showcase-title">Royal Amber Para Unisex Eau De</h3>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">Aroma único y sofisticado</p>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/img 19.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/img 20.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">NUEVO</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action agregar-carrito">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <h3 href="#" class="showcase-category">BOLSO</h3>
+              
+                  <h3>
+                    <h3 href="#" class="showcase-title">Prada Bolso Bandolera Impermeable De Nailon </h3>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">Diseño exclusivo y alta calidad</p>
+                  </div>
+              
+                </div>
+              
+              </div>
+              
+              </div>
+
+            </div>
+
+            <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Oferta Del Día</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/img 14.jpg" alt="VALENTINO GARAVANI ONE STUD XL - BLANCO " width="300">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="https://wa.me/573128462035" target="_blank">
+                      <h3 class="showcase-title">VALENTINO GARAVANI ONE STUD XL - BLANCO </h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Descubre el lujo y la elegancia con el VALENTINO GARAVANI ONE STUD XL en color blanco. Este tenis de la más alta calidad, 1.1 y triple A, ofrece un diseño exclusivo y una comodidad inigualable. Perfecto para cualquier ocasión, combina estilo y durabilidad para que siempre luzcas impecable. ¡Aprovecha nuestra oferta del día y añade este icónico modelo a tu colección!
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$150.000</p>
+
+                      <del>$180.000</del>
+                    </div>
+
+                    <a href="https://wa.me/573128462035" target="_blank">
+                      <button class="add-cart-btn">ESCRIBANOS</button>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/img 15.jpg" alt="Reloj cuarzo de puntero redondo con estampado" width="362">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="https://wa.me/573128462035" target="_blank" class="showcase-title">Reloj cuarzo de puntero redondo con estampado</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Este elegante reloj de cuarzo combina un diseño moderno con una precisión impecable. Fabricado con materiales de la más alta calidad, su puntero redondo y el estampado detallado añaden un toque de sofisticación. Perfecto para cualquier ocasión, este reloj no solo es un accesorio de moda sino también una herramienta fiable y duradera. ¡Obtén el tuyo hoy y experimenta la excelencia en cada segundo!
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$50.000</p>
+                      <del>$80.000</del>
+                    </div>
+              
+                    <a href="https://wa.me/573128462035" target="_blank">
+                      <button class="add-cart-btn">ESCRIBANOS</button>
+                    </a>
+
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+-->
+
+<div class="container">
+
+  <div class="testimonials-box">
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonial">
+      <h2 class="title">BIENVENIDOS</h2>
+
+      <div class="testimonial-card">
+        <img src="./assets/images/foto.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+        <p class="testimonial-name">ELIZABETH</p>
+        <p class="testimonial-title">CEO & Fundadora de [J.E]</p>
+        <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+        <p class="testimonial-desc">
+          Queridos clientes,<br><br>
+          Me complace darles la bienvenida a nuestra tienda. Todos nuestros productos son de la más alta calidad. Si hay algún artículo que desea y no lo tenemos disponible, por favor, no dude en comunicarse conmigo directamente. Estoy aquí para asegurarme de que su experiencia de compra sea excepcional.<br><br>
+          Todas las compras, pagos y cualquier queja o consulta se gestionan a través de mí personalmente para evitar cualquier tipo de malentendido. Su satisfacción es nuestra máxima prioridad.<br><br>
+          Gracias por su confianza y preferencia.<br><br>
+          Atentamente,<br>
+          Elizabeth
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-container">
+      <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+      <a href="https://wa.me/573128462035" target="_blank" class="cta-content">
+        <p class="discount">HACEMOS DESCUENTOS</p>
+        <h2 class="cta-title">¡No te quedes sin tu producto favorito!</h2>
+        <p class="cta-text">¿Tienes preguntas o quieres hacer un pedido? ¡Estamos aquí para ayudarte!</p>
+        <button class="cta-btn">COMPRAR AHORA</button>
+      </a>
+    </div>
+
+    <!-- SERVICE -->
+    <div class="service">
+      <h2 class="title">NUESTROS SERVICIOS</h2>
+      <div class="service-container">
+        <a href="https://wa.me/573128462035" target="_blank" class="service-item">
+          <div class="service-icon">
+            <ion-icon name="rocket-outline"></ion-icon>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">ENVÍOS RÁPIDOS Y CONFIABLES</h3>
+            <p class="service-desc">Disfrute de una entrega oportuna con nuestro eficiente servicio de envio, garantizando que sus productos lleguen de forma rápida y segura</p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/573128462035" target="_blank" class="service-item">
+          <div class="service-icon">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">CONSULTA DE PRODUCTOS</h3>
+            <p class="service-desc">Obtenga asesoramiento y recomendaciones sobre una variedad de productos para sus necesidades específicas</p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/573128462035" target="_blank" class="service-item">
+          <div class="service-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">EL MEJOR SOPORTE EN LÍNEA</h3>
+            <p class="service-desc">Contacta con nosotros para cualquier consulta o soporte técnico. ¡Estamos aquí para ayudarte!<br>
+              Horarios de atención: Lunes a Viernes de 8AM - 11PM <br>
+              Sábados de 11AM - 5PM <br>
+              Domingos y festivos: No atendemos
+            </p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/573128462035" target="_blank" class="service-item">
+          <div class="service-icon">
+            <ion-icon name="arrow-undo-outline"></ion-icon>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">DEVOLUCIONES Y CAMBIOS FÁCILES</h3>
+            <p class="service-desc">Experimente devoluciones y cambios sin complicaciones con nuestra política amigable para el cliente, que le brinda tranquilidad</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 
+    - CONTACTO
+-->
+
+<section class="contact">
+  <div class="contact-text"></div>
+  <div class="form-container sign-in">
+    <form action="https://formsubmit.co/elizabeth4756l@gmail.com" method="POST" id="commentForm">
+        <h1>COMENTARIO</h1>
+        <div class="linea"></div> <!-- Agrega esta línea aquí -->
+        <div class="social-icons">
+            <a href="https://web.facebook.com/profile.php?id=61562259325789" target="_blank" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://x.com/Tienda_JE" target="_blank" class="icon"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.instagram.com/onlinej.e/" target="_blank" class="icon"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <div class="input-wrapper">
+          <label for="name">Nombre*</label>
+          <input type="text" name="name" id="name" required placeholder="Ingrese su nombre" class="input-field">
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Correo Electrónico*</label>
+          <input type="email" name="email" id="email" required placeholder="Ingrese su correo electrónico" class="input-field">
+        </div>
+        <div class="input-wrapper">
+          <label for="message">Mensaje*</label>
+          <textarea name="message" id="message" required placeholder="Escriba su mensaje" class="input-field"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <span>Enviar Mensaje</span>
+        </button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/index.html">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
+  <form id="commentForm" class="contact-form">
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-right" id="toggleMessage">
+          <h1>¿Tienes preguntas? </h1>
+          <p>¡Queremos conocer su experiencia! Estamos aquí para ofrecerte la mejor ayuda</p>
+          <a href="https://wa.me/573128462035" target="_blank" class="primary"> CONTÁCTENOS</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-feedback" id="formFeedback"></div>
+  </form>
+
+  <div id="feedback-message" class="feedback success">
+    Comentario enviado
+</div>
+</section>
+
+<!--<section id="commentsContainer" class="comment-section">
+  <h3>Comentarios:</h3>
+  <p id="formFeedback"></p>
+  <div id="commentCount"></div>
+  <div id="commentsList"></div>
+</section>-->
+
+  <!--
+    - FOOTER
+  -->
+
+</div>
+
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">DIRECTORIO DE MARCAS</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">MODA :</h3>
+
+          <h4 href="#" class="footer-category-link">Camiseta</h4>
+          <h4 href="#" class="footer-category-link">Camisas</h4>
+          <h4 href="#" class="footer-category-link">Pantalones Cortos Y Jeans</h4>
+          <h4 href="#" class="footer-category-link">Chaqueta</h4>
+          <h4 href="#" class="footer-category-link">Vestido</h4>
+          <h4 href="#" class="footer-category-link">Ropa Interior</h4>
+          <h4 href="#" class="footer-category-link">Calcetería</h4>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">CALZADO :</h3>
+        
+          <h4 href="#" class="footer-category-link">Deporte</h4>
+          <h4 href="#" class="footer-category-link">formal</h4>
+          <h4 href="#" class="footer-category-link">Botas</h4>
+          <h4 href="#" class="footer-category-link">casual</h4>
+          <h4 href="#" class="footer-category-link">Zapatos Vaqueros</h4>
+          <h4 href="#" class="footer-category-link">Zapatos</h4>
+          <h4 href="#" class="footer-category-link">Zapatos De Fiesta</h4>
+          <h4 href="#" class="footer-category-link">Marca</h4>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">JOYERÍA :</h3>
+        
+          <h4 href="#" class="footer-category-link">Collar</h4>
+          <h4 href="#" class="footer-category-link">Pendientes</h4>
+          <h4 href="#" class="footer-category-link">Anillos De Pareja</h4>
+          <h4 href="#" class="footer-category-link">Colgantes</h4>
+          <h4 href="#" class="footer-category-link">Brazaletes</h4>
+          <h4 href="#" class="footer-category-link">Pulseras</h4>
+          <h4 href="#" class="footer-category-link">Alfiler Nasal</h4>
+          <h4 href="#" class="footer-category-link">Cadena</h4>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">COSMÉTICOS :</h3>
+        
+          <h4 href="#" class="footer-category-link">Shampoo</h4>
+          <h4 href="#" class="footer-category-link">Gel De Baño</h4>
+          <h4 href="#" class="footer-category-link">Lavado De Cara</h4>
+          <h4 href="#" class="footer-category-link">Kit De Maquillaje</h4>
+          <h4 href="#" class="footer-category-link">Pintalabios</h4>
+          <h4 href="#" class="footer-category-link">perfume</h4>
+          <h4 href="#" class="footer-category-link">Jabón Corporal</h4>
+          <h4 href="#" class="footer-category-link">Tinte Para El Cabello</h4>
+          <h4 href="#" class="footer-category-link">Protector Solar</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title bold">CATEGORÍAS POPULARES</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Moda</h4>
+          </li>
+
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Electrónico</h4>
+          </li>
+
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Cosmético</h4>
+          </li>
+
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Relojes</h4>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title bold">PRODUCTOS Y SERVICIOS</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Bajan Los Precios</h4>
+          </li>
+        
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Nuevos Productos
+            </h4>
+          </li>
+        
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Mejores Ventas</h4>
+          </li>
+        
+          <li class="footer-nav-item">
+            <h4 href="#" class="footer-nav-link">Contáctenos</h4>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title bold">NUESTRA EMPRESA</h2>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link bold">Entrega</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link bold">Aviso Legal</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link bold">Términos Y Condicioness</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link bold">Sobre Nosotros</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link bold">Pago Seguro</a>
+          </li>
+        </ul>
+        
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title bold">CONTACTO</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content bold">
+              Manz1 casa4 piso 3 Laureles-dosquebradas
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link bold">(57) 3128462035</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link bold">yeanroag@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title bold">SÍGUENOS</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="https://web.facebook.com/profile.php?id=61562259325789" target="_blank" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://x.com/Tienda_JE" target="_blank" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.instagram.com/onlinej.e/" target="_blank" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p class="copyright bold">
+          Copyright &copy; 2023 Tienda en línea J.E</p>
+
+        <a href="https://wa.me/573128462035" target="_blank"> <img src="assets/images/whatsapp-line.svg" style="width: 50px; height: 50px;"> </a>
+          <br><br>  
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
